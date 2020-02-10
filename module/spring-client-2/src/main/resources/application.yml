@@ -7,3 +7,15 @@ server:
 spring:
   application:
     name: spring-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8760
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
